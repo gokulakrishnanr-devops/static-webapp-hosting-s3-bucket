@@ -2,112 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Paytm Demo</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
+            margin: 0;
             background-color: #f4f4f4;
-            color: #333;
         }
-
         header {
-            background: #4CAF50;
+            background-color: #00baf2;
             color: white;
             padding: 20px;
             text-align: center;
         }
-
         nav {
-            background: #333;
-            padding: 10px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: #004c73;
         }
-
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
-            font-weight: bold;
+            margin: 0 15px;
+            padding: 14px 10px;
         }
-
         nav a:hover {
-            color: #4CAF50;
+            background-color: #00baf2;
+            color: black;
         }
-
         .container {
             padding: 40px 20px;
-            text-align: center;
+            max-width: 600px;
+            margin: auto;
         }
-
         .card {
             background: white;
             padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 400px;
+            margin: 20px 0;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
-
         button {
-            background: #4CAF50;
+            background-color: #00baf2;
             color: white;
-            padding: 10px 20px;
             border: none;
+            padding: 12px 20px;
             border-radius: 5px;
             cursor: pointer;
+            width: 100%;
         }
-
         button:hover {
-            background: #45a049;
+            background-color: #004c73;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004c73;
+            color: white;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Website</h1>
-    <p>Built with HTML & CSS</p>
+    <h1>Paytm Demo</h1>
+    <p>Safe demo website for learning purposes</p>
 </header>
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
+    <a href="#">Wallet</a>
+    <a href="#">Bank Transfer</a>
+    <a href="#">Offers</a>
     <a href="#">Contact</a>
 </nav>
 
 <div class="container">
-    <h2>About This Site</h2>
-    <p>This is a simple website template you can customize.</p>
+    <div class="card">
+        <h2>Add Money to Wallet</h2>
+        <input type="number" placeholder="Enter Amount">
+        <input type="text" placeholder="Enter Phone Number">
+        <button onclick="alert('This is a demo, payment not processed')">Pay Now</button>
+    </div>
 
     <div class="card">
-        <h3>My First Card</h3>
-        <p>This is a content card. You can add anything here.</p>
-        <button onclick="showMessage()">Click Me</button>
+        <h2>Send Money</h2>
+        <input type="text" placeholder="Recipient Phone Number">
+        <input type="number" placeholder="Amount">
+        <button onclick="alert('This is a demo, money not sent')">Send</button>
     </div>
 </div>
 
 <footer>
-    <p>© 2026 My Website | All Rights Reserved</p>
+    © 2026 Paytm Demo | For learning purposes only
 </footer>
-
-<script>
-    function showMessage() {
-        alert("Thanks for clicking!");
-    }
-</script>
 
 </body>
 </html>
